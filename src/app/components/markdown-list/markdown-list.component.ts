@@ -6,8 +6,7 @@ import { ContentfulService } from './../../_services/contentful.service';
 
 @Component({
   selector: 'app-markdown-list',
-  templateUrl: './markdown-list.component.html',
-  styleUrls: ['./markdown-list.component.css']
+  templateUrl: './markdown-list.component.html'
 })
 export class MarkdownListComponent implements OnInit {
   entriesList: Observable<any>;

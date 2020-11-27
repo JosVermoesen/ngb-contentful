@@ -6,8 +6,7 @@ import { Entry } from 'contentful';
 
 @Component({
   selector: 'app-journal-detail',
-  templateUrl: './journal-detail.component.html',
-  styleUrls: ['./journal-detail.component.css']
+  templateUrl: './journal-detail.component.html'
 })
 export class JournalDetailComponent implements OnInit {
   markdownId: string;

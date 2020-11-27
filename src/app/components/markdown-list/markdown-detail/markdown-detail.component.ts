@@ -7,13 +7,12 @@ import { ContentfulService } from './../../../_services/contentful.service';
 
 @Component({
   selector: 'app-markdown-detail',
-  templateUrl: './markdown-detail.component.html',
-  styleUrls: ['./markdown-detail.component.css']
+  templateUrl: './markdown-detail.component.html'
 })
 export class MarkdownDetailComponent implements OnInit {
   markdownId: string;
   markdown: Entry<any>;
-  
+
   constructor(
     private route: ActivatedRoute,
     private router: Router,

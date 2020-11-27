@@ -6,13 +6,12 @@ import { Entry } from 'contentful';
 
 @Component({
   selector: 'app-insurance-detail',
-  templateUrl: './insurance-detail.component.html',
-  styleUrls: ['./insurance-detail.component.css']
+  templateUrl: './insurance-detail.component.html'
 })
 export class InsuranceDetailComponent implements OnInit {
   markdownId: string;
   markdown: Entry<any>;
-  
+
   constructor(
     private route: ActivatedRoute,
     private router: Router,

@@ -6,8 +6,7 @@ import { ContentfulService } from './../../_services/contentful.service';
 
 @Component({
   selector: 'app-insurances-list',
-  templateUrl: './insurances-list.component.html',
-  styleUrls: ['./insurances-list.component.css']
+  templateUrl: './insurances-list.component.html'
 })
 export class InsurancesListComponent implements OnInit {
   entriesList: Observable<any>;

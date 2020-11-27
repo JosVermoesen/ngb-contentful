@@ -6,8 +6,7 @@ import { ContentfulService } from '../_services/contentful.service';
 
 @Component({
   selector: 'app-contenttype-list',
-  templateUrl: './contenttype-list.component.html',
-  styleUrls: ['./contenttype-list.component.scss']
+  templateUrl: './contenttype-list.component.html'
 })
 export class ContentTypeListComponent implements OnInit {
   contentTypeList: Observable<any>;

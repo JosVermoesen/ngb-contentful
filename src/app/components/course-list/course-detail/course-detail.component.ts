@@ -7,8 +7,7 @@ import { ContentfulService } from './../../../_services/contentful.service';
 
 @Component({
   selector: 'app-course-detail',
-  templateUrl: './course-detail.component.html',
-  styleUrls: ['./course-detail.component.css']
+  templateUrl: './course-detail.component.html'
 })
 export class CourseDetailComponent implements OnInit {
   courseId: string;
