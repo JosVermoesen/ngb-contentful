@@ -1,0 +1,14 @@
+<div class="container mt-3">
+  <div>
+    <div class="alert alert-info" role="alert" *ngFor="let e of entriesList | async">
+      <div class="d-flex flex-wrap flex-xl-nowrap flex-lg-nowrap flex-md-nowrap">
+        <div class="p-2">
+          <h5 class="alert-heading"><a (click)="courseDetail(e.sys.id)">{{ e.fields.title }}</a></h5>
+          <p><i>{{ e.fields.shortDescription }}</i></p>
+          <button (click)="courseDetail(e.sys.id)" class="btn btn-primary">Detail</button>
+        </div>        
+      </div>
+    </div>
+    <button (click)="goBack()" class="btn btn-danger">Back To ContentTypes</button>
+  </div>
+</div>

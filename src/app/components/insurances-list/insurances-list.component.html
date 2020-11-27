@@ -1,0 +1,12 @@
+<div class="container mt-3">
+  <button (click)="goBack()" class="btn btn-danger mb-3">Back To ContentTypes</button>
+  <div class="alert alert-info" role="alert" *ngFor="let e of entriesList | async">
+    <div class="d-flex flex-wrap flex-xl-nowrap flex-lg-nowrap flex-md-nowrap">
+      <div class="p-1">
+        <h5 class="alert-heading"><a (click)="markdownDetail(e.sys.id)">{{ e.fields.title }}</a></h5>
+        <p><i>{{ e.fields.shortDescription }}</i></p>
+        <button (click)="markdownDetail(e.sys.id)" class="btn btn-primary">Detail</button>
+      </div>
+    </div>
+  </div>
+</div>

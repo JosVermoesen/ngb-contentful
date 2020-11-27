@@ -1,0 +1,14 @@
+<div class="container mt-3">
+  <button (click)="goBack()" class="btn btn-danger mb-3">Back To Journals</button>
+  <div class="alert alert-info" role="alert">
+    <div class="d-flex flex-wrap flex-xl-nowrap flex-lg-nowrap flex-md-nowrap">
+      <div class="p-1">
+        <h5 class="alert-heading">
+          <i>{{ markdownId }}</i></h5>
+        <div *ngIf="markdown">
+          <div [innerHTML]="markdown.fields.body | mdToHtml"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

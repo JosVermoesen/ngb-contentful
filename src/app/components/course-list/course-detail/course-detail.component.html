@@ -1,0 +1,16 @@
+<div class="container mt-3">
+  <div>
+    <div class="alert alert-info" role="alert">
+      <div class="d-flex flex-wrap flex-xl-nowrap flex-lg-nowrap flex-md-nowrap">
+        <div class="p-2">
+          <h5 class="alert-heading">
+            <i>{{ courseId }}</i></h5>
+            <div *ngIf="course">
+              <div [innerHTML]="course.fields.description | mdToHtml"></div>
+            </div>
+        </div>
+      </div>      
+    </div>
+    <button (click)="goBack()" class="btn btn-danger">Back To Courses</button>
+  </div>
+</div>
